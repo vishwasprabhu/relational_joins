@@ -23,11 +23,11 @@ SELECT * FROM side_b;
 -- CROSS JOIN 
 -- Assume side_c is 40 so that the only condition needed to be satisfied in order to form a triangle is for a+b>c
 SELECT *,
-	CASE WHEN combination> 40 THEN 'Triangle'
+	CASE WHEN summation> 40 THEN 'Triangle'
 		 ELSE 'Not Triangle'
 		 END AS conclusion
 FROM (
-	SELECT side_a, side_b, side_a+side_b AS combination
+	SELECT side_a, side_b, side_a+side_b AS summation
 	FROM side_a
 	CROSS JOIN
 	side_b
