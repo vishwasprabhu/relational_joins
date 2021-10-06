@@ -37,9 +37,9 @@ INSERT INTO avengers VALUES
 ('Nick Fury', 'Samuel L. Jackson', 'Iron Man', 2008),
 ('Jarvis/Vision', 'Paul Bettany', 'Iron Man', 2008),
 ('Natasha Romanova/Black Widow', 'Scarlett Johansson', 'Iron Man 2', 2010),
-('Thor', 'Chris Hemsworth', 'Thor', 2011),
 ('Jane Foster', 'Natalie Portman', 'Thor', 2011),
-('Steve Rogers/Captain America', 'Chris Evans', 'Captain America: The First Avenger', 2011);
+('Steve Rogers/Captain America', 'Chris Evans', 'Captain America: The First Avenger', 2011)
+('T''Challa/Black Panther', 'Chadwick Boseman', 'Black Panther', 2018);
 
 CREATE TABLE star_wars
 (character VARCHAR,
