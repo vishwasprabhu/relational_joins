@@ -31,8 +31,8 @@ Leveraging SQL to link tables together is what we called ‘relational joins’.
 After running corss join query in [`relational_joins.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/relational_joins.sql). We will see first two columns, these are all possible pairs of two sides after we cross joining two tables. In this case we have 16 pairs with respect of the cartesian product rule. Third column is the summation of two sides and the the forth column is the conclusion, it indicates which summation > 40 (our given side_c). Here we can form 7 different triangles.
 
 ### Files
-* [`reproducible_table_data.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/reproducible_table_data.sql): Run this to reproducible all the tables and data were used in this project.
-* [`relational_joins.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/relational_joins.sql): Run this to see different joins results.
+* [`reproducible_table_data.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/reproducible_table_data.sql): Run this file to reproduce all the tables and data were used in this project.
+* [`relational_joins.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/relational_joins.sql): Run this file to see different joins results.
 
 ### Software used
 + PostgreSQL 14
