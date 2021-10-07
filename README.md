@@ -8,11 +8,16 @@
 2021/10/04
 
 ### Description
-RDMS helps us to store and track records in a tidy way, but keeping all the data in a single table would hold tons of information making it hard to determine a row call and structure for various data. The real power of RDMS comes from working with data across multiple tables at once, allowing us to combine tables as needed to solve problems that require several types of data. Leveraging SQL to link tables together is what we called ‘relational joins’. The term ‘relational’ refers to the fact that tables relate to each other by constrains and references. And join will let us merge columns together.
+RDMS helps us to store and track records in a tidy way, but keeping all the data in a single table would hold tons of information making it hard to determine a row call and structure for various data. The real power of RDMS comes from working with data across multiple tables at once, allowing us to combine tables as needed to solve problems that require several types of data.
+
+Leveraging SQL to link tables together is what we called ‘relational joins’. The term ‘relational’ refers to the fact that tables relate to each other by constrains and references. And join will let us merge columns together. In this project, we will demonstrate five major types of joins.
 
 ### Workflow:
 > Cross join
 
+<img src="img/cross_join.png" height="300" width="600">
+
+
 ### Software used
 + PostgreSQL 14
-    * pgAdmin4
+> * pgAdmin4
