@@ -26,7 +26,7 @@ Leveraging SQL to link tables together is known as ‘relational joins’.  The 
       <img src="img/trangle_side_b.png" width="100" />
 </p>
 
-After running the cross join query in [`relational_joins.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/relational_joins.sql), we will first see two columns: these are all possible pairs of two sides after we cross join the two tables.  In this case, we have 16 pairs, resulting from the cartesian product rule.  The third column is the summation of the first two sides, and the the fourth column is the conclusion, which indicates which sums > 40 (our given side_c).  In this example, we can form 7 different triangles.
+After running the cross join query in [`relational_joins.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/relational_joins.sql), the first two columns will display all possible pairs of lengths of the first two sides of the rectangle from cross joining the two tables.  In this case, we have 16 pairs, resulting from the cartesian product rule.  The third column is the summation of the lengths of the first two sides, and the the fourth column is the conclusion, which indicates which sums > 40 (our given length of side_c).  In this example, we can form 7 different valid triangles.
 
 ### Files
 * [`reproducible_table_data.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/reproducible_table_data.sql): Run this file to reproduce all the tables and data used in this project.
