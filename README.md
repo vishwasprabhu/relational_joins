@@ -19,9 +19,7 @@ Leveraging SQL to link tables together is known as ‘relational joins’.  The 
 
 > Case:
 
-    Given one side of a triangle is 40, how
-	many different combinations are there
-	in which we can form a valid triangle?
+    Given one side of a triangle is 40, how many different combinations are there which can form a valid triangle?
 
 <p float="left">
       <img src="img/trangle_side_a.png" width="100" />
