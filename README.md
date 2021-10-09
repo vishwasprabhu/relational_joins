@@ -17,9 +17,14 @@ Leveraging SQL to link tables together is known as ‘relational joins’.  The 
 
 <img src="img/cross_join.png" height="300" width="580">
 
+> Query:
+
+    SELECT a,b
+    FROM table_a
+    CROSS JOIN table_b
 > Case:
 
-    Given one side of a triangle is 40, how many different combinations are there which can form a valid triangle?
+Given one side of a triangle is 40, how many different combinations are there which can form a valid triangle?
 
 <p float="left">
       <img src="img/trangle_side_a.png" width="100" />
