@@ -23,7 +23,7 @@ Leveraging SQL to link tables together is known as ‘relational joins’.  The 
     FROM table_a
     INNER JOIN table_b
     ON table_a.a = table_b.b
- > Query for Inner join for movie datset:
+ > Query for Inner join on movie datset:
     
     SELECT avengers.character AS avengers_character,
         avengers.actor AS actor,
@@ -52,7 +52,7 @@ After running the inner join query in [`relational_joins.sql`](https://github.co
     FULL OUTER JOIN table_b
     ON table_a.a = table_b.b
 
-> General Query syntax for Full outer join:
+> Query for Full outer join on movie dataset:
     
     SELECT avengers.character AS avengers_character,
 		CASE WHEN avengers.actor IS NULL THEN star_wars.actor
