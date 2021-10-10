@@ -33,7 +33,7 @@ Leveraging SQL to link tables together is known as ‘relational joins’.  The 
     ON avengers.actor = star_wars.actor;
     
 <p float="left">
-      <img src="img/table_inner_join.png" width="100" />
+      <img src="img/table_inner_join.png" width="300" />
 </p>
 
  </p>
@@ -62,7 +62,7 @@ After running the inner join query in [`relational_joins.sql`](https://github.co
     FULL OUTER JOIN star_wars
     ON avengers.actor = star_wars.actor;
 <p float="left">
-      <img src="img/table_Full_outer_join.png" width="100" />
+      <img src="img/table_Full_outer_join.png" width="300" />
 </p>
 </p>
 In general the full outer join returns all the rows from two tables based on the coloumns mentioned in the join condition. So we get a union operation between two tables and get the exhaustive list of data points from both the tables. The returned table would have more rows than either of the input tables on which we are performing the outer join.
