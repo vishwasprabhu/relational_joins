@@ -33,7 +33,7 @@ Leveraging SQL to link tables together is known as ‘relational joins’.  The 
     ON avengers.actor = star_wars.actor;
     
 <p float="left">
-      <img src="img/table_inner_join.png" width="350" />
+      <img src="img/table_inner_join.png" width="500" />
 </p>
 
  </p>
