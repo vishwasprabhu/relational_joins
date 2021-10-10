@@ -15,7 +15,7 @@ Leveraging SQL to link tables together is known as ‘relational joins’.  The 
 ### Workflow:
 3) Inner join
 
-<img src="img/inner_join.png" height="300" width="580">
+<img src="img/inner_join.png" height="300" width="500">
 
 > General Query syntax for Inner join:
 
@@ -71,7 +71,7 @@ After running the full outer join query in [`relational_joins.sql`](https://gith
 
 5) Cross join
 
-<img src="img/cross_join.png" height="300" width="500">
+<img src="img/cross_join.png" height="300" width="580">
 
 > Query:
 
