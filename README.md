@@ -17,33 +17,51 @@ Leveraging SQL to link tables together is known as ‘relational joins’.  The 
 
 <img src="img/inner_join.png" height="300" width="580">
 
-</p>
-The general query syntax for inner join is as follows:
-
-> Query:
+> General Query syntax for Inner join:
 
     SELECT a,b
     FROM table_a
     INNER JOIN table_b
     ON table_a.a = table_b.b
- </p>
+ > Query for Inner join for movie datset:
+    
+    SELECT avengers.character AS avengers_character,
+        avengers.actor AS actor,
+	    star_wars.character AS star_wars_character
+    FROM avengers 
+    INNER JOIN star_wars
+    ON avengers.actor = star_wars.actor;
 
-After running the inner join query in [`relational_joins.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/relational_joins.sql), the first coloumn would display 
+ </p>
+In general the inner join returns common rows between two tables based on the coloumns mentioned in the join condition. So we get an intersection operation between two tables and get the common data points as per the coloumns mentioned in the join condition. The rows returned would be a subset of both the tables and thus will have lesser rows than either of the tables.
+After running the inner join query in [`relational_joins.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/relational_joins.sql), the first coloumn would display the charater name in the Avengers movie, the second would display the actors name and the third column the character name in the Star Wars movie. Here we get the list of actors who have acted in both the Avengers and Star Wars movie.
 
 
 4) Full Outer Join
 
 <img src="img/full_outer_join.png" height="300" width="580">
 
-> Query:
-
+> General Query syntax for Full outer join:
+    
     SELECT a,b
     FROM table_a
     FULL OUTER JOIN table_b
     ON table_a.a = table_b.b
-</p>
 
-After running the cross join query in [`relational_joins.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/relational_joins.sql), the first two columns will display all possible pairs of lengths of the first two sides of the rectangle from cross joining the two tables.  In this case, we have 16 pairs, resulting from the cartesian product rule.  The third column is the summation of the lengths of the first two sides, and the the fourth column is the conclusion, which indicates which sums > 40 (our given length of side_c).  In this example, we can form 7 different valid triangles.
+> General Query syntax for Full outer join:
+    
+    SELECT avengers.character AS avengers_character,
+		CASE WHEN avengers.actor IS NULL THEN star_wars.actor
+		ELSE avengers.actor END AS actor,
+		star_wars.character AS star_wars_character
+    FROM avengers 
+    FULL OUTER JOIN star_wars
+    ON avengers.actor = star_wars.actor;
+
+</p>
+In general the full outer join returns all the rows from two tables based on the coloumns mentioned in the join condition. So we get a union operation between two tables and get the exhaustive list of data points from both the tables. The returned table would have more rows than either of the input tables on which we are performing the outer join.
+After running the full outer join query in [`relational_joins.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/relational_joins.sql), the first coloumn would display the charater name in the Avengers movie, the second would display the actors name and the third column the character name in the Star Wars movie. Here we get the list of actors who have acted in either of the Avengers or Star Wars movie. We get Null values for character name if a particular actor has not acted in that movie.
+
 
 5) Cross join
 
