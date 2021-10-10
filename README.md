@@ -13,7 +13,13 @@ RDMS helps us to store and track records in a tidy way, but keeping all the data
 Leveraging SQL to link tables together is known as ‘relational joins’.  The term ‘relational’ refers to the fact that tables relate to each other by constraints and references.  And join allows us to merge columns together.  In this project, we will demonstrate five major types of joins.
 
 ### Workflow:
-5) Cross join
+3) Inner join
+
+
+5) Full Outer Join
+
+
+7) Cross join
 
 <img src="img/cross_join.png" height="300" width="580">
 
