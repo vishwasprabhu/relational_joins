@@ -15,11 +15,37 @@ Leveraging SQL to link tables together is known as ‘relational joins’.  The 
 ### Workflow:
 3) Inner join
 
+<img src="img/inner_join.png" height="300" width="580">
 
-5) Full Outer Join
+</p>
+The general query syntax for inner join is as follows:
+
+> Query:
+
+    SELECT a,b
+    FROM table_a
+    INNER JOIN table_b
+    ON table_a.a = table_b.b
+ </p>
+
+After running the inner join query in [`relational_joins.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/relational_joins.sql), the first coloumn would display 
 
 
-7) Cross join
+4) Full Outer Join
+
+<img src="img/full_outer_join.png" height="300" width="580">
+
+> Query:
+
+    SELECT a,b
+    FROM table_a
+    FULL OUTER JOIN table_b
+    ON table_a.a = table_b.b
+</p>
+
+After running the cross join query in [`relational_joins.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/relational_joins.sql), the first two columns will display all possible pairs of lengths of the first two sides of the rectangle from cross joining the two tables.  In this case, we have 16 pairs, resulting from the cartesian product rule.  The third column is the summation of the lengths of the first two sides, and the the fourth column is the conclusion, which indicates which sums > 40 (our given length of side_c).  In this example, we can form 7 different valid triangles.
+
+5) Cross join
 
 <img src="img/cross_join.png" height="300" width="580">
 
