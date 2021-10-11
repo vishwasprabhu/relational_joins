@@ -14,9 +14,9 @@ Leveraging SQL to link tables together is known as ‘relational joins’.  The 
 
 ### Data:
 Using data available from https://www.imdb.com, a small SQL table named avengers was created, containing a limited amount of information on Avengers movies:<br>
-<img src="img/avengers_table.png" height="300" width="600">
+<img src="img/avengers_table.png" height="300" width="800">
 <br>Similar information on Star Wars movies was also used to create a second table named star_wars:<br>
-<img src="img/star_wars_table.png" height="240" width="400">
+<img src="img/star_wars_table.png" height="300" width="800">
 <br>SQL code to create and insert rows into these tables can be seen and run from the file  [`reproducible_table_data.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/reproducible_table_data.sql) here in this repository.<br>
 Using various relational joins with the information in these tables, we hope to learn which actors who have starred in Avengers movies have also been cast in any Star Wars movies, and which have not. We would also like to view the question from the other side and see which actors who have starred in Star Wars movies have also been cast in any Avengers movies, and which have not.
 
