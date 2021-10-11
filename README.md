@@ -147,9 +147,9 @@ After running the cross join query in [`relational_joins.sql`](https://github.co
 * [`relational_joins.sql`](https://github.com/vishwasprabhu/relational_joins/blob/main/relational_joins.sql): Run this file to see the results from different joins.
 
 ### Software used
-+ PostgreSQL 14
-> * pgAdmin4
+* PostgreSQL 14
+* pgAdmin4
 
 ### Credits
-Venn diagrams were from: [`devart`](https://www.devart.com/dbforge/sql/sqlcomplete/sql-join-statements.html)
-Movie data obtained from: [`IMDb`](https://www.imdb.com)
+* Venn diagrams were from: [`devart`](https://www.devart.com/dbforge/sql/sqlcomplete/sql-join-statements.html)
+* Movie data obtained from: [`IMDb`](https://www.imdb.com)
